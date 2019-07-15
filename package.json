@@ -1,0 +1,22 @@
+{
+  "name": "ts-express-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/app.ts",
+    "swagger": "swaggerGen -c ./swaggerConfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.0.7",
+    "typescript-rest": "^2.2.0",
+    "typescript-rest-swagger": "^1.0.3"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

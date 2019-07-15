@@ -1,0 +1,20 @@
+{
+  "swagger": {
+    "outputDirectory": "./dist",
+    "entryFile": "./src/controller/*.ts",
+    "outputFormat": "openapi_3",
+    "host": "localhost:8080",
+    "version": "1.0",
+    "name": "Typescript-rest Test API",
+    "description": "a description",
+    "license": "MIT",
+    "basePath": "/v1",
+    "securityDefinitions": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "access_token",
+        "in": "query"
+      }
+    }
+  }
+}
