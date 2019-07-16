@@ -13,6 +13,7 @@ const controllers = express.Router();
 Server.buildServices(app);
 Server.loadControllers(controllers, path.resolve('src/controller', '*'));
 
+app.use(express.json());
 app.use(controllers);
 
 if (fs.existsSync(swaggerJsonPath)) {
